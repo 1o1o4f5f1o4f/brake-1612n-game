@@ -17,16 +17,6 @@ go run .        # 需要 Go 1.26+（开发环境 1.27.3）
 go build -o brake.exe
 ```
 
-> 首次拉依赖需要能访问模块代理。本机 `proxy.golang.org` 不通，用国内代理即可：
->
-> ```powershell
-> $env:GOPROXY = "https://goproxy.cn,direct"; go run .
-> ```
->
-> ```bash
-> GOPROXY=https://goproxy.cn,direct go run .
-> ```
-
 ## 玩法
 
 刹车力是一个**连续量**，不是一格一格的：
